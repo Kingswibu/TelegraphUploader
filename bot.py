@@ -85,19 +85,19 @@ async def home(client, message):
         InlineKeyboardButton('Close', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Our Channel', url='http://telegram.me/nbzoning'),
-        InlineKeyboardButton('Source Code', url='https://github.com/Wahyu213/TelegraphUploader')
+        InlineKeyboardButton('Our Channel', url='http://telegram.me/gabutinaja00'),
+        InlineKeyboardButton('Source Code', url='https://yandex.com')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await Tgraph.send_message(
         chat_id=message.chat.id,
         text="""<b>Hey there,
         
-im a telegraph Uploader That Can Upload Photo, Video And Gif
+Aku Adalah Robot Telegraph Untuk Membuat foto,video, dan gif menjadi link
         
-Simply send me photo, video or gif to upload to Telegra.ph
+Contohnya Kirim Saya Foto,video,gif. untuk menjadi link
         
-Made With Love By @nbzoning</b>""",
+Repo By : @kingswibu</b>""",
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=message.message_id
@@ -107,10 +107,10 @@ Made With Love By @nbzoning</b>""",
 async def help(client, message):
   buttons = [[
         InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('close', callback_data='close')
     ],
     [
-        InlineKeyboardButton('Our Channel', url='http://telegram.me/nbzoning')
+        InlineKeyboardButton('Channel', url='http://telegram.me/gabutinaja00')
     ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await Tgraph.send_message(
